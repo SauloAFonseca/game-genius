@@ -1,0 +1,110 @@
+.main-game
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100vh;  /* vh - viewport hight */
+    width: 100vw;   /* vw - viewport width */
+}
+.lado-esquerdo
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lado-direito
+{
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu
+{
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    background-color: black;
+}
+.conteiner-botao
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.botao
+{
+    margin: 10px auto;
+}
+.titulo
+{
+    text-align: center;
+    text-justify: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;;
+    margin: 10px 15px;
+    padding: 10px;
+}
+#botao-jogar
+{
+    background-color: chartreuse;
+    color: black;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 15%;
+}
+#botao-reset
+{
+    background-color: red;
+    color: black;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 15%;
+}
+.genius 
+{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #080808;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+.blue 
+{
+    grid-area: azul;
+    background-color: #0000FF;
+    border-bottom-right-radius: 100%;
+}
+.red 
+{
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+.yellow 
+{
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+.green 
+{
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+.selected 
+{
+    opacity: 0.5;
+}
